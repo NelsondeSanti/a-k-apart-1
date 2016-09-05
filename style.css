@@ -1,0 +1,286 @@
+
+body {
+	font-family: sans-serif;
+	margin:0px ;
+	overflow-x: hidden;
+	font-weight: 100;
+}
+.background{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url("device-line-icons-anand_krish.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-filter:blur(5px);
+	z-index: 0
+}
+.foreground{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+a:link, a:visited{
+	text-decoration: none;
+	color: black;
+}
+header{
+	height: 100px;
+	z-index: 100;
+	padding: 15px;
+	background: rgba(255,255,255,0.9);
+	box-sizing: border-box;
+	box-shadow: 0 0 10px #ccc;
+	z-index: 1
+}
+.social-buttons{
+}
+span#brand{
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	text-shadow: 0 0 5px #ccc;
+	letter-spacing: 5px;
+}
+.social-buttons{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: auto !important;
+	list-style: none;
+	width: 125px;
+}
+.social-buttons li{
+	float: left;
+}
+.social-buttons li a {
+	display: block;
+	padding: 5px;
+}
+.social-buttons img{
+	width: 20px
+}
+/*Start navigation*/
+ul.topnav{
+	width:290px;
+	margin: auto!important;
+	z-index: 100;
+	list-style-type: none;
+	background-color: transparent;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 18px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 16px;
+	text-shadow: 0 0 1px #eee;
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+}
+ul.topnav li a:hover{
+	color: #ff8000;
+}
+ul.topnav li a.active {
+	color: #ff8000;
+	text-shadow: 0 0 5px #ff8000;
+	border-bottom: 3px solid #ff8000;
+}
+.nav-trigger, .icon{
+	display: none;
+}
+/*End Navigation*/
+
+/*Start Body*/
+.tabcontent {
+	display: none;
+	border-top: none;
+	position: relative;
+	padding: 10px 10px;
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
+}
+.inner{
+	margin: 0 auto;
+	text-align: justify;
+	border-radius: 5px;
+	padding: 20px;
+	background: rgba(255,255,255,0.8) !important;
+	box-shadow: 0 0 10px #fff;
+	display: table;
+	height: 64vh !important;
+}
+
+.inner h1, .inner h2, .inner h3 {
+	padding: 5px 15px;
+	text-align: center;
+}
+a.button{
+	display: block;
+	text-align: center;
+	padding: 5px;
+	border: 3px solid black;
+	width: 150px;
+	margin: 70px auto;
+	border-radius: 5px;
+}
+a.low-margin{
+	margin: 10px auto
+}
+.desc {
+	font-size: 24px;
+	padding: 15px;
+	text-align: center;
+}
+.stuff{
+	font-size: 20px;
+	padding: 15px;
+	text-align: justify;
+	font-weight:thin;
+}
+.big{
+	font-size: 32px;
+}
+.social-card{
+	width: 400px;
+	padding: 30px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+figure.social-icon{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+.details a, .details span {
+	display: block
+	padding: 10px;
+	font-size: 20px;
+}
+.card-content{
+	float: left;
+	height: 100%;
+	width: 75%
+}
+
+/*End Body*/
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (min-width:992px){
+	.inner{
+		width: 80%;
+	}
+	.topnav{
+		position: relative;
+		margin: 0 auto;
+	}
+	figure.social-icon{
+		float: left;
+	}
+}
+
+@media screen and (max-width: 570px){
+	header{
+		box-shadow: 0 0 10px #ccc;
+		height: 60px;
+		background: transparent;
+	}
+
+	.social-buttons{
+		z-index: 0;
+		position: absolute;
+		top: 235px;
+		right: 0%;
+	}
+/*Start Navigation*/
+	ul.topnav{
+		position: absolute;;
+		top:65px;
+		right:0;
+		width:100%;
+		margin: 0;
+		padding: 0;
+		z-index: 0;
+	}
+	ul.topnav li {
+		float: none;
+	}
+	ul.topnav li a {
+		text-align: right;
+		border-bottom: 0px solid transparent;
+	}
+	ul.topnav li a.active{
+		border-bottom: 0px solid transparent;
+	}
+	span.icon {
+		display: block;
+		font-size: 24px;
+		cursor: pointer;
+	}
+	span.icon a:link, span.icon a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	div.site-wrap{
+		background: white ;
+		z-index: 1;
+		width: 100%;
+		position: relative;
+		top: 0px;
+		right: 0px;
+		min-height: 600px;
+	}
+	.nav-trigger{
+		position: absolute;
+		clip: rect(0,0,0,0);
+	}
+	label[for="nav-trigger"]{
+		position: absolute;
+		top:15px;
+		right: 15px;
+		z-index: 101px;
+		width: 30px;
+		height: 30px;
+	}
+	.nav-trigger:checked + label{
+		color: #ff8000;
+	}
+	.nav-trigger:checked ~ .site-wrap{
+		top: 220px;
+	}
+	.nav-trigger + label{
+		 transition: color 0.5s
+	}
+	.site-wrap {
+		transition: top 0.5s
+	}
+/*End Navigation*/
+
+/*Start Body*/
+	.social-card{
+		width: auto;
+		padding: 30px;
+	}
+}
