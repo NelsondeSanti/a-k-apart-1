@@ -11,7 +11,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: url("device-line-icons-anand_krish.svg");
+	background: url("Macbook__ipad__iphone 2.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -54,7 +54,7 @@ span#brand{
 	right: 0;
 	margin: auto !important;
 	list-style: none;
-	width: 125px;
+	width: 100px;
 }
 .social-buttons li{
 	float: left;
@@ -92,12 +92,12 @@ ul.topnav li a {
 	border-bottom: 3px solid transparent;
 }
 ul.topnav li a:hover{
-	color: #ff8000;
+	color: #00b0e6;
 }
 ul.topnav li a.active {
-	color: #ff8000;
-	text-shadow: 0 0 5px #ff8000;
-	border-bottom: 3px solid #ff8000;
+	color: #00b0e6;
+	text-shadow: 0 0 5px #00b0e6;
+	border-bottom: 3px solid #00b0e6;
 }
 .nav-trigger, .icon{
 	display: none;
@@ -265,7 +265,7 @@ figure.social-icon{
 		height: 30px;
 	}
 	.nav-trigger:checked + label{
-		color: #ff8000;
+		color: #00b0e6;
 	}
 	.nav-trigger:checked ~ .site-wrap{
 		top: 220px;
